@@ -59,37 +59,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Stats Bar */}
-      <section className="bg-white border-b border-slate-200 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="grid grid-cols-3 gap-6 text-center">
-            <div>
-              <div className="text-3xl font-extrabold text-slate-900">
-                {sortedCases.length}
-              </div>
-              <div className="text-sm text-slate-500 mt-1">
-                Cases Documented
-              </div>
-            </div>
-            <div>
-              <div className="text-3xl font-extrabold text-red-700">
-                $50B+
-              </div>
-              <div className="text-sm text-slate-500 mt-1">
-                In Penalties & Settlements
-              </div>
-            </div>
-            <div>
-              <div className="text-3xl font-extrabold text-green-700">
-                {sortedCases.filter((c) => c.status === "Settled" || c.status === "Completed" || c.status === "Convicted" || c.status === "Order Issued").length}
-              </div>
-              <div className="text-sm text-slate-500 mt-1">
-                Cases With Outcomes
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Featured Cases */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
