@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 
 const categories = [
-  "Banking / Financial Fraud",
+  "Banking / Financial",
   "E-Commerce / Online Shopping",
   "Telecom / Internet",
   "Insurance Claim Denial",
@@ -191,7 +191,7 @@ export default function SubmitPage() {
         Share Your Story
       </h1>
       <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-        Have you been a victim of corporate fraud, unethical business
+        Have you been a victim of corporate misconduct, unethical business
         practices, or consumer rights violations? Share your experience to
         help warn others and hold companies accountable.
       </p>

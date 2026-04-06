@@ -23,7 +23,7 @@ export async function generateMetadata({
   const info = countryInfo[country as CountryCode];
   return {
     title: `${info.name} Consumer Cases — The Consumer Story`,
-    description: `Documented cases of corporate fraud, consumer court orders, and regulatory actions in ${info.name}.`,
+    description: `Documented cases of corporate misconduct, consumer court orders, and regulatory actions in ${info.name}.`,
   };
 }
 

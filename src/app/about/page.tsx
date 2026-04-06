@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "About — The Consumer Story",
   description:
-    "About The Consumer Story — the united voice of consumers fighting back against corporate fraud and broken promises.",
+    "About The Consumer Story — the united voice of consumers fighting back against corporate misconduct and broken promises.",
 };
 
 export default function AboutPage() {
@@ -31,7 +31,7 @@ export default function AboutPage() {
             corporate misconduct and empower ordinary people to fight back.
           </p>
           <p className="text-slate-700 leading-relaxed mb-4">
-            Every day, consumers are cheated by businesses that take their
+            Every day, consumers are let down by businesses that take their
             money and don&apos;t deliver. They refuse refunds. They don&apos;t answer
             calls. They use fine print and dark patterns to trap people. They
             count on the fact that most consumers will give up — because
@@ -39,7 +39,7 @@ export default function AboutPage() {
           </p>
           <p className="text-slate-700 leading-relaxed mb-4">
             We believe that shouldn&apos;t be the case. When businesses break their
-            promises, when they engage in fraud, when they exploit the
+            promises, when they act unethically, when they exploit the
             vulnerable — there should be consequences. And consumers should
             know that others have fought and won.
           </p>

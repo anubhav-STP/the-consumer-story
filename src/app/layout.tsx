@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "The Consumer Story — Real Cases. Real Consequences.",
   description:
-    "The united voice of consumers fighting back against corporate fraud, unethical business practices, and broken promises. Documenting real cases, real consequences.",
+    "The united voice of consumers fighting back against corporate misconduct, unethical business practices, and broken promises. Documenting real cases, real consequences.",
   keywords:
-    "consumer rights, corporate fraud, consumer court, consumer protection, scam, refund, consumer story",
+    "consumer rights, consumer court, consumer protection, consumer complaints, refund, consumer story",
 };
 
 export default function RootLayout({

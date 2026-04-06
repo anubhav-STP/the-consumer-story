@@ -4,7 +4,7 @@ import SearchFilter from "@/components/SearchFilter";
 export const metadata = {
   title: "All Cases — The Consumer Story",
   description:
-    "Browse all documented cases of corporate fraud, unethical business practices, and consumer court orders.",
+    "Browse all documented cases of corporate misconduct, unethical business practices, and consumer court orders.",
 };
 
 export default function CasesPage() {

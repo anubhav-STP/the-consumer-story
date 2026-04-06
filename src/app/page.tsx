@@ -23,7 +23,7 @@ export default function HomePage() {
             </h1>
             <p className="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed">
               The united voice of consumers who refuse to be silenced.
-              We document real cases of corporate fraud, broken promises,
+              We document real cases of corporate misconduct, broken promises,
               and unethical business practices — backed by facts, court
               records, and regulatory filings. Because when corporations
               won&apos;t answer to you, they&apos;ll answer to everyone.
