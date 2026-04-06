@@ -57,9 +57,9 @@ Over 5,300 employees were fired for their involvement, but critics noted that se
     featured: true,
     lastUpdated: "April 2025",
     sources: [
+      { name: "CFPB: Orders Wells Fargo to Pay $3.7 Billion", url: "https://www.consumerfinance.gov/about-us/newsroom/cfpb-orders-wells-fargo-to-pay-37-billion-for-widespread-mismanagement-of-auto-loans-mortgages-and-deposit-accounts/" },
       { name: "CFPB Consent Order (Dec 2022)", url: "https://www.consumerfinance.gov/enforcement/actions/wells-fargo-bank-na-2022/" },
-      { name: "Reuters: Wells Fargo $3.7B Settlement", url: "https://www.reuters.com/business/finance/wells-fargo-pay-37-bln-resolve-cfpb-probe-into-consumer-abuses-2022-12-20/" },
-      { name: "Federal Reserve Asset Cap Order", url: "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20180202a.htm" },
+      { name: "Federal Reserve Asset Cap Order (2018)", url: "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20180202a.htm" },
     ],
   },
   {
@@ -91,8 +91,8 @@ Internal documents showed that Epic employees had raised concerns about the conf
     featured: true,
     lastUpdated: "April 2025",
     sources: [
-      { name: "FTC Press Release (Dec 2022)", url: "https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations" },
-      { name: "FTC COPPA Enforcement", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/epic-games-inc" },
+      { name: "FTC: Epic Games to Pay $520 Million (Dec 2022)", url: "https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations" },
+      { name: "FTC Case File: Epic Games", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/1923203-epic-games-matter" },
     ],
   },
   {
@@ -123,8 +123,8 @@ The breach exposed the fundamental tension between Facebook's business model —
       "The case raised global awareness about data privacy and led to increased scrutiny of tech companies' data practices. It contributed to momentum for privacy legislation worldwide.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "FTC Press Release: $5B Settlement (Jul 2019)", url: "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook" },
-      { name: "FTC Case File", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/092-3184/facebook-inc" },
+      { name: "FTC: $5 Billion Penalty on Facebook (Jul 2019)", url: "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook" },
+      { name: "FTC Case File: Facebook, Inc.", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/092-3184-182-3109-c-4365-facebook-inc-matter" },
     ],
   },
   {
@@ -155,8 +155,8 @@ Consumers had no choice in Equifax collecting their data — the credit reportin
       "The breach affected nearly half of all Americans. It led to widespread identity theft concerns and contributed to stronger data breach notification laws and cybersecurity regulations.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "FTC: Equifax Settlement", url: "https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement" },
-      { name: "CFPB Consent Order", url: "https://www.consumerfinance.gov/enforcement/actions/equifax-inc/" },
+      { name: "FTC: Equifax Data Breach Settlement", url: "https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement" },
+      { name: "FTC: Equifax to Pay $575 Million (Jul 2019)", url: "https://www.ftc.gov/news-events/news/press-releases/2019/07/equifax-pay-575-million-part-settlement-ftc-cfpb-states-related-2017-data-breach" },
     ],
   },
   {
@@ -190,9 +190,8 @@ Several VW executives were criminally charged. Former CEO Martin Winterkorn was 
     featured: true,
     lastUpdated: "April 2025",
     sources: [
-      { name: "EPA: VW Clean Air Act Violations", url: "https://www.epa.gov/enforcement/volkswagen-clean-air-act-civil-settlement" },
-      { name: "DOJ: VW Agrees to $14.7B Settlement", url: "https://www.justice.gov/opa/pr/volkswagen-ag-agrees-plead-guilty-and-pay-43-billion-criminal-and-civil-penalties" },
-      { name: "FTC: VW Deceptive Advertising", url: "https://www.ftc.gov/enforcement/refunds/volkswagen-settlement" },
+      { name: "DOJ: Volkswagen to Spend Up to $14.7 Billion", url: "https://www.justice.gov/archives/opa/pr/volkswagen-spend-147-billion-settle-allegations-cheating-emissions-tests-and-deceiving" },
+      { name: "DOJ: VW Agrees to Plead Guilty, Pay $4.3 Billion", url: "https://www.justice.gov/archives/opa/pr/volkswagen-ag-agrees-plead-guilty-and-pay-43-billion-criminal-and-civil-penalties-six" },
     ],
   },
   {
@@ -223,8 +222,8 @@ Internal documents revealed that Amazon employees had raised concerns about thes
       "The case highlights the growing problem of subscription traps across the tech industry and could set important precedent for how companies design sign-up and cancellation flows.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "FTC Press Release (Jun 2023)", url: "https://www.ftc.gov/news-events/news/press-releases/2023/06/ftc-takes-action-against-amazon-enrolling-consumers-amazon-prime-without-consent" },
-      { name: "FTC Complaint Filing", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/amazon-prime" },
+      { name: "FTC: Action Against Amazon Prime Dark Patterns (Jun 2023)", url: "https://www.ftc.gov/news-events/news/press-releases/2023/06/ftc-takes-action-against-amazon-enrolling-consumers-amazon-prime-without-consent-sabotaging-their" },
+      { name: "FTC Case File: Amazon.com ROSCA", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/2123050-amazoncom-inc-rosca-ftc-v" },
     ],
   },
   {
@@ -255,8 +254,8 @@ The case was one of several FTC actions targeting "negative option" practices wh
       "The case contributed to the FTC's broader crackdown on subscription traps, ultimately leading to the 'Click-to-Cancel' rule finalized in October 2024.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "FTC Press Release (Nov 2022)", url: "https://www.ftc.gov/news-events/news/press-releases/2022/11/ftc-action-against-vonage-results-100-million-customers-trapped-subscriptions" },
-      { name: "FTC Case File", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/vonage" },
+      { name: "FTC: $100 Million Vonage Settlement (Nov 2022)", url: "https://www.ftc.gov/news-events/news/press-releases/2022/11/ftc-action-against-vonage-results-100-million-customers-trapped-illegal-dark-patterns-junk-fees-when-trying-cancel-service" },
+      { name: "FTC: Vonage Refunds", url: "https://www.ftc.gov/enforcement/refunds/vonage-refunds" },
     ],
   },
   {
@@ -287,8 +286,7 @@ The case highlighted how the student loan servicing industry's profit incentives
       "Tens of thousands of borrowers received loan cancellation and refunds. The case contributed to broader reforms in student loan servicing and forgiveness programs.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "CFPB: Navient Lawsuit", url: "https://www.consumerfinance.gov/enforcement/actions/navient/" },
-      { name: "State AG Settlement Announcement", url: "https://www.attorneygeneral.gov/taking-action/ag-josh-shapiro-announces-1-85-billion-settlement-with-navient/" },
+      { name: "CFPB: Navient Enforcement Action", url: "https://www.consumerfinance.gov/enforcement/actions/navient/" },
     ],
   },
   {
@@ -319,8 +317,7 @@ The case demonstrated how tech companies can use confusing settings and buried o
       "The settlement forced Google to be more transparent about its data collection practices and gave users clearer information about what data is being collected and how to control it.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "Oregon AG Press Release", url: "https://www.doj.state.or.us/media-home/news-media-releases/attorney-general-rosenblum-announces-391-5-million-settlement-with-google/" },
-      { name: "AP Investigation: Google Location Tracking", url: "https://apnews.com/article/north-america-science-technology-business-ap-top-news-828aefab64d4411bac257a07c1af0ecb" },
+      { name: "AP Investigation: Google Tracks You Even When You Say Not To", url: "https://apnews.com/article/north-america-science-technology-business-ap-top-news-828aefab64d4411bac257a07c1af0ecb" },
     ],
   },
   {
@@ -353,8 +350,8 @@ Southwest's customer service also failed spectacularly during the crisis — pho
       "The case led to DOT proposing new rules requiring automatic refunds for canceled flights and banning airlines from hiding fees. It demonstrated the real-world consequences of corporate underinvestment in essential systems.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "DOT: Record $140M Penalty", url: "https://www.transportation.gov/briefing-room/dot-fines-southwest-airlines-140-million-2022-holiday-meltdown" },
-      { name: "DOT Consent Order", url: "https://www.transportation.gov/airconsumer/southwest-airlines-consent-order" },
+      { name: "DOT: $140 Million Penalty Against Southwest Airlines", url: "https://www.transportation.gov/briefing-room/dot-penalizes-southwest-airlines-140-million-2022-holiday-meltdown" },
+      { name: "DOT Consent Order 2023-12-11", url: "https://www.transportation.gov/airconsumer/southwest-order-2023-12-11" },
     ],
   },
   {
@@ -386,8 +383,8 @@ The collapse also triggered a broader crypto market downturn, wiping out billion
     featured: true,
     lastUpdated: "April 2025",
     sources: [
-      { name: "DOJ: SBF Sentenced to 25 Years", url: "https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes" },
-      { name: "SEC v. Samuel Bankman-Fried", url: "https://www.sec.gov/litigation/complaints/2022/comp-pr2022-219.pdf" },
+      { name: "DOJ: Sam Bankman-Fried Sentenced to 25 Years", url: "https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-prison" },
+      { name: "DOJ Case: United States v. Samuel Bankman-Fried", url: "https://www.justice.gov/criminal/criminal-fraud/case/united-states-v-samuel-bankman-fried" },
     ],
   },
   {
@@ -418,8 +415,7 @@ The case was significant because it established that companies cannot escape lia
       "The ruling strengthened enforcement against robocalls and established important precedent about corporate accountability for outsourced telemarketing.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "FTC: Dish Network Case", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/dish-network-llc" },
-      { name: "DOJ Press Release", url: "https://www.justice.gov/opa/pr/court-imposes-record-breaking-2803-million-penalty-dish-network" },
+      { name: "DOJ Case: U.S. v. Dish Network", url: "https://www.justice.gov/archives/opa/pr/court-imposes-record-breaking-2803-million-penalty-dish-network" },
     ],
   },
   {
@@ -452,8 +448,7 @@ The automakers initially responded slowly, offering only a steering wheel lock a
       "Millions of vehicle owners received free security upgrades. The case highlighted how cost-cutting decisions can have devastating consequences for consumers and communities.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "NHTSA: Kia/Hyundai Theft Recall", url: "https://www.nhtsa.gov/vehicle/2022/HYUNDAI/ELANTRA" },
-      { name: "Class Action Settlement Website", url: "https://www.hyundaiandkiatheftsettlement.com/" },
+      { name: "Hyundai and Kia Theft Settlement", url: "https://www.hyundaiandkiatheftsettlement.com/" },
     ],
   },
   {
@@ -484,8 +479,7 @@ The FCC investigation found that T-Mobile's security practices were inadequate r
       "Affected customers received payments from the class action settlement and free identity theft protection. The case underscored the need for stronger data security standards in the telecom industry.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "FCC: T-Mobile $31.5M Settlement", url: "https://www.fcc.gov/document/t-mobile-pay-315-million-settlement-following-data-breaches" },
-      { name: "T-Mobile Class Action Settlement", url: "https://www.t-mobilesettlement.com/" },
+      { name: "T-Mobile Data Breach Class Action Settlement", url: "https://www.t-mobilesettlement.com/" },
     ],
   },
   {
@@ -514,7 +508,7 @@ Older Americans were disproportionately affected, with some spending thousands o
       "Refunds distributed to affected consumers. The case highlighted the vulnerability of elderly consumers to deceptive online practices.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "FTC Press Release (2023)", url: "https://www.ftc.gov/news-events/news/press-releases/2023/03/publishers-clearing-house-pay-185-million-settle-ftc-charges-it-used-dark-patterns" },
+      { name: "FTC: PCH to Pay $18.5 Million (Mar 2023)", url: "https://www.ftc.gov/news-events/news/press-releases/2023/03/publishers-clearing-house-pay-185-million-settle-ftc-charges-it-used-dark-patterns" },
     ],
   },
 
@@ -550,9 +544,8 @@ The National Commission for Protection of Child Rights (NCPCR) received numerous
     featured: true,
     lastUpdated: "April 2025",
     sources: [
-      { name: "NCPCR Notices to BYJU'S", url: "https://ncpcr.gov.in/" },
-      { name: "Ministry of Consumer Affairs: BYJU'S Complaints", url: "https://consumerhelpline.gov.in/" },
-      { name: "Economic Times: BYJU'S Refund Crisis", url: "https://economictimes.indiatimes.com/tech/startups/byjus-refund-woes-mount-as-consumer-complaints-pile-up/articleshow/97789012.cms" },
+      { name: "The Print: BYJU'S Promises NCPCR Not to Exploit Poor Households", url: "https://theprint.in/india/education/edtech-firm-byjus-promises-child-rights-body-ncpcr-that-it-will-not-exploit-poor-households/1279172/" },
+      { name: "Business Today: BYJU'S Revamps Sales Model After NCPCR Intervention", url: "https://www.businesstoday.in/entrepreneurship/story/byjus-revamps-sales-model-introduces-affordability-test-after-child-rights-bodys-intervention-360514-2023-01-16" },
     ],
   },
   {
@@ -583,8 +576,7 @@ The Advertising Standards Council of India (ASCI) found multiple WhiteHat Jr adv
       "Thousands of parents spent lakhs on courses that didn't deliver on promises. The case highlighted the lack of regulation in India's ed-tech sector and the use of legal threats to silence consumer advocates.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "ASCI Rulings on WhiteHat Jr", url: "https://www.ascionline.in/" },
-      { name: "LiveLaw: WhiteHat Jr Defamation Suit Withdrawn", url: "https://www.livelaw.in/news-updates/whitehat-jr-withdraws-20-crore-defamation-suit-against-pradeep-poonia-182830" },
+      { name: "MediaNama: WhiteHat Jr vs Pradeep Poonia Defamation Case", url: "https://www.medianama.com/2021/01/223-whitehat-jr-pradeep-poonia-defamation-case/" },
     ],
   },
   {
@@ -618,8 +610,8 @@ The Supreme Court's involvement was extraordinary — it took the rare step of c
     featured: true,
     lastUpdated: "April 2025",
     sources: [
-      { name: "Supreme Court Judgment (Jul 2019) — Bikram Chatterji v. Union of India", url: "https://main.sci.gov.in/supremecourt/2017/25698/25698_2017_Judgement_23-Jul-2019.pdf" },
-      { name: "NBCC: Amrapali Project Status", url: "https://www.nbccindia.com/" },
+      { name: "Business Standard: SC Cancels Amrapali RERA Registration", url: "https://www.business-standard.com/article/current-affairs/sc-cancels-amrapali-group-rera-registration-for-cheating-homebuyers-119072301326_1.html" },
+      { name: "LiveLaw: SC Cancels Amrapali Registration, Directs NBCC", url: "https://www.livelaw.in/top-stories/breaking-sc-cancels-registration-of-amrapali-group-under-rera-directs-nbcc-to-complete-stalled-projects-146962" },
     ],
   },
   {
@@ -650,8 +642,7 @@ The Supreme Court intervened, noting that the company's management had "virtuall
       "The case, along with Amrapali, led to the strengthening of RERA (Real Estate Regulation Act) enforcement and established that real estate promoters face criminal consequences for cheating homebuyers.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "Supreme Court: Unitech Board Superseded", url: "https://main.sci.gov.in/" },
-      { name: "Economic Times: Unitech Promoters Jailed", url: "https://economictimes.indiatimes.com/industry/services/property-/-cstruction/unitech-case-chandra-brothers-to-remain-in-jail/articleshow/78456789.cms" },
+      { name: "LiveLaw: SC Orders Arrest of Unitech MD Sanjay Chandra", url: "https://www.livelaw.in/top-stories/supreme-court-orders-arrest-of-unitech-md-sanjay-chandra-cancels-bail-152024" },
     ],
   },
   {
@@ -684,8 +675,7 @@ Consumers have also complained about the difficulty of reaching customer service
       "While individual compensation amounts are small, the collective cases have created pressure for transparency in ride-hailing pricing and prompted regulatory discussions about capping surge pricing.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "National Consumer Helpline", url: "https://consumerhelpline.gov.in/" },
-      { name: "CCPA Orders on Cab Aggregators", url: "https://consumeraffairs.nic.in/" },
+      { name: "National Consumer Helpline (File Complaints)", url: "https://consumerhelpline.gov.in/" },
     ],
   },
   {
@@ -717,7 +707,6 @@ These cases are significant because they demonstrate that even government-owned 
     lastUpdated: "April 2025",
     sources: [
       { name: "NCDRC Case Database", url: "https://ncdrc.nic.in/" },
-      { name: "DGCA: Passenger Rights", url: "https://www.dgca.gov.in/" },
     ],
   },
   {
@@ -748,8 +737,8 @@ IRDAI (Insurance Regulatory and Development Authority of India) data shows that 
       "Consumer court judgments have created important precedents protecting policyholders from unjust claim denials. However, the process remains slow and many families are forced into lengthy legal battles during medical emergencies.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "NCDRC Judgments Database", url: "https://ncdrc.nic.in/" },
-      { name: "IRDAI: Policyholder Grievances", url: "https://igms.irda.gov.in/" },
+      { name: "IRDAI: Policyholder Grievance Portal", url: "https://igms.irda.gov.in/" },
+      { name: "NCDRC Case Database", url: "https://ncdrc.nic.in/" },
     ],
   },
   {
@@ -782,8 +771,7 @@ Many consumers, especially in smaller cities, lack the knowledge or resources to
       "While individual cases result in refunds and compensation, the systemic issue of counterfeit and wrong product deliveries continues, particularly affecting consumers in tier 2 and tier 3 cities.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "National Consumer Helpline", url: "https://consumerhelpline.gov.in/" },
-      { name: "CCPA: E-Commerce Guidelines", url: "https://consumeraffairs.nic.in/" },
+      { name: "National Consumer Helpline (File Complaints)", url: "https://consumerhelpline.gov.in/" },
     ],
   },
   {
@@ -820,8 +808,7 @@ Consumer forums across India have handled thousands of such cases, typically ord
       "While regulations have improved, unauthorized charges remain a persistent problem. Consumers in rural areas, who rely heavily on prepaid plans and have limited internet literacy, are disproportionately affected.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "TRAI: VAS Regulations", url: "https://www.trai.gov.in/" },
-      { name: "National Consumer Helpline", url: "https://consumerhelpline.gov.in/" },
+      { name: "TRAI Orders and Regulations", url: "https://www.trai.gov.in/release-publication/orders-trai" },
     ],
   },
   {
@@ -856,8 +843,7 @@ Several consumer forums have ordered OYO to compensate customers for these defic
       "Budget travelers, who often have limited alternatives and financial cushion, are disproportionately affected. The cases highlight the accountability gap in platform/aggregator business models where companies disclaim responsibility for partner-provided services.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "Consumer Forum Orders (eCourts)", url: "https://services.ecourts.gov.in/" },
-      { name: "National Consumer Helpline", url: "https://consumerhelpline.gov.in/" },
+      { name: "National Consumer Helpline (File Complaints)", url: "https://consumerhelpline.gov.in/" },
     ],
   },
   {
@@ -890,8 +876,7 @@ FSSAI (Food Safety and Standards Authority of India) has issued guidelines for f
       "The cases highlight the gap in food safety accountability in platform-mediated delivery, where platforms, restaurants, and delivery partners each disclaim responsibility when things go wrong.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "FSSAI: Food Aggregator Guidelines", url: "https://www.fssai.gov.in/" },
-      { name: "Consumer Forum Orders (eCourts)", url: "https://services.ecourts.gov.in/" },
+      { name: "FSSAI: Food Safety Standards", url: "https://www.fssai.gov.in/" },
     ],
   },
   {
@@ -925,7 +910,6 @@ The NCDRC and various state consumer commissions took up multiple cases and esta
     lastUpdated: "April 2025",
     sources: [
       { name: "NCDRC Case Database", url: "https://ncdrc.nic.in/" },
-      { name: "DGCA: Refund Directions During COVID", url: "https://www.dgca.gov.in/" },
     ],
   },
   {
@@ -962,8 +946,7 @@ Consumer courts have ordered banks to refund unauthorized charges in numerous ca
       "While RBI guidelines have improved transparency, unauthorized bank charges remain a persistent issue, particularly affecting low-income account holders who are less likely to check statements or challenge charges.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "RBI: Integrated Ombudsman Scheme", url: "https://cms.rbi.org.in/" },
-      { name: "RBI Circulars on Service Charges", url: "https://www.rbi.org.in/" },
+      { name: "RBI Integrated Ombudsman Scheme", url: "https://cms.rbi.org.in/" },
     ],
   },
   {
@@ -996,9 +979,7 @@ After multiple rounds of bidding and legal challenges, the Suraksha Group was ap
       "The case led to the landmark amendment of the IBC recognizing homebuyers as financial creditors — a seismic shift that improved protections for real estate buyers across India. It set the precedent for how stalled real estate projects are handled through insolvency.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "Supreme Court: Jaypee IBC Proceedings", url: "https://main.sci.gov.in/" },
       { name: "NCLT Orders Database", url: "https://nclt.gov.in/" },
-      { name: "Economic Times: Suraksha Group Resolution", url: "https://economictimes.indiatimes.com/industry/services/property-/-cstruction/suraksha-group-gets-approval-for-jaypee-infratech-resolution/articleshow/97654321.cms" },
     ],
   },
   {
@@ -1031,8 +1012,7 @@ Separately, the NCDRC held that DLF's buyer agreements contained unfair trade pr
       "The case was instrumental in the push for RERA (Real Estate Regulation Act, 2016) and established that one-sided builder-buyer agreements constitute unfair trade practices. It empowered homebuyers across India to challenge exploitative contract terms.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "CCI: DLF Order (Rs 630 Cr Penalty)", url: "https://www.cci.gov.in/" },
-      { name: "NCDRC: Belaire Owners' Association v. DLF", url: "https://ncdrc.nic.in/" },
+      { name: "CCI: Competition Commission of India Orders", url: "https://www.cci.gov.in/antitrust/orders" },
     ],
   },
   {
@@ -1067,8 +1047,7 @@ Many consumers, especially in smaller cities, remain unaware of these protection
       "The rulings established that e-commerce platforms cannot hide behind the 'marketplace' label to avoid responsibility, strengthening protections for online shoppers across India.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "Consumer Protection (E-Commerce) Rules 2020", url: "https://consumeraffairs.nic.in/" },
-      { name: "National Consumer Helpline", url: "https://consumerhelpline.gov.in/" },
+      { name: "Consumer Protection E-Commerce Rules 2020", url: "https://consumeraffairs.nic.in/acts-and-rules/consumer-protection-e-commerce-rules-2020" },
     ],
   },
   {
@@ -1101,9 +1080,9 @@ The incident raised fundamental questions about consent, data privacy, and the p
       "The case exposed the risks of Aadhaar data misuse by private companies and contributed to the strengthening of consent requirements for financial services. It was a catalyst for India's data protection legislation discussions.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "UIDAI: Airtel eKYC Suspension", url: "https://uidai.gov.in/" },
-      { name: "RBI: Payments Bank Guidelines", url: "https://www.rbi.org.in/" },
-      { name: "Economic Times: Airtel Payments Bank Aadhaar Issue", url: "https://economictimes.indiatimes.com/industry/banking/finance/banking/uidai-suspends-airtel-airtel-payments-banks-ekyc-licence/articleshow/62215652.cms" },
+      { name: "Business Standard: UIDAI Suspends Airtel eKYC Licence", url: "https://www.business-standard.com/article/companies/uidai-suspends-airtel-airtel-payments-bank-s-ekyc-licence-117121600513_1.html" },
+      { name: "The Wire: UIDAI Suspends eKYC Licence Over Aadhaar Misuse", url: "https://thewire.in/economy/uidai-suspends-e-kyc-licence-airtel-airtel-payments-bank-alleged-aadhaar-misuse" },
+      { name: "Inc42: UIDAI Puts Temporary Ban on Airtel", url: "https://inc42.com/buzz/airtel-aadhaar-ban-uidai/" },
     ],
   },
 
@@ -1144,8 +1123,8 @@ The deadline for PPI claims was set as August 29, 2019, after a massive public a
     featured: true,
     lastUpdated: "April 2025",
     sources: [
-      { name: "FCA: PPI Information", url: "https://www.fca.org.uk/ppi" },
-      { name: "Financial Ombudsman Service: PPI", url: "https://www.financial-ombudsman.org.uk/businesses/complaints-deal/ppi" },
+      { name: "FCA: PPI Complaints", url: "https://www.fca.org.uk/consumers/ppi-complaints" },
+      { name: "FCA: Monthly PPI Refunds and Compensation Data", url: "https://www.fca.org.uk/data/monthly-ppi-refunds-and-compensation" },
     ],
   },
   {
@@ -1176,8 +1155,7 @@ Many claimants expressed disappointment with the settlement amount, noting that 
       "While individual payments were modest, the case demonstrated that UK consumers can pursue large-scale class actions and hold multinational corporations accountable for fraud.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "BBC: VW UK Settlement", url: "https://www.bbc.co.uk/news/business-61560167" },
-      { name: "High Court Group Litigation", url: "https://www.judiciary.uk/" },
+      { name: "BBC: VW Settles UK Dieselgate Claim", url: "https://www.bbc.co.uk/news/business-61681063" },
     ],
   },
   {
@@ -1210,8 +1188,7 @@ The case became a symbol of the broader cost-of-living crisis in the UK and the 
       "The case led to significant reforms in how energy companies treat vulnerable customers and highlighted the human cost of the energy crisis. The ban on forced installations protected thousands of vulnerable households.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "Ofgem: Prepayment Meter Investigation", url: "https://www.ofgem.gov.uk/" },
-      { name: "The Times Investigation", url: "https://www.thetimes.co.uk/" },
+      { name: "BBC: British Gas Prepayment Meter Scandal", url: "https://www.bbc.co.uk/news/business-64731808" },
     ],
   },
   {
@@ -1245,9 +1222,7 @@ The Supreme Court agreed to hear an appeal in April 2025, with a final ruling ex
     featured: true,
     lastUpdated: "April 2025",
     sources: [
-      { name: "FCA: Motor Finance Review", url: "https://www.fca.org.uk/news/statements/motor-finance-review-update" },
-      { name: "Court of Appeal: Johnson v FirstRand Bank", url: "https://www.judiciary.uk/" },
-      { name: "BBC: Car Finance Mis-selling Explained", url: "https://www.bbc.co.uk/news/business-67789012" },
+      { name: "FCA: Motor Finance Discretionary Commission Arrangements", url: "https://www.fca.org.uk/firms/motor-finance-discretionary-commission" },
     ],
   },
   {
@@ -1282,8 +1257,7 @@ The FCA ordered Wonga to pay compensation to over 45,000 customers who had been 
       "The Wonga case led directly to the FCA's price cap on payday loans, which dramatically reduced the cost of high-cost short-term credit across the UK and drove many predatory lenders out of the market.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "FCA: Wonga Enforcement", url: "https://www.fca.org.uk/news/press-releases/fca-reaches-agreement-wonga" },
-      { name: "Grant Thornton: Wonga Administration", url: "https://www.grantthornton.co.uk/" },
+      { name: "FCA: Payday Lending Rules", url: "https://www.fca.org.uk/news/press-releases/fca-publishes-final-rules-payday-lending" },
     ],
   },
   {
@@ -1316,8 +1290,8 @@ Under pressure from regulators, Ryanair eventually processed the backlog of refu
       "The case contributed to stronger enforcement of airline passenger rights in the UK and increased regulatory focus on ensuring airlines provide timely refunds for cancelled flights.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "CMA: Ryanair Undertakings", url: "https://www.gov.uk/cma-cases/covid-19-cancellations-ryanair" },
-      { name: "CAA: Passenger Refund Rights", url: "https://www.caa.co.uk/" },
+      { name: "CMA: COVID-19 Lockdown Flight Refunds Case", url: "https://www.gov.uk/cma-cases/covid-19-cancellations-airlines" },
+      { name: "GOV.UK: CMA Launches Action Against BA and Ryanair", url: "https://www.gov.uk/government/news/cma-launches-action-against-british-airways-and-ryanair-over-refunds" },
     ],
   },
   {
@@ -1350,8 +1324,7 @@ Similar concerns have been raised about loyalty pricing at other major UK superm
       "The investigation highlights growing concerns about whether loyalty scheme pricing genuinely benefits consumers or creates an illusion of savings while potentially increasing prices overall.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "CMA: Tesco Clubcard Investigation", url: "https://www.gov.uk/cma-cases/" },
-      { name: "Which? Investigation: Loyalty Pricing", url: "https://www.which.co.uk/" },
+      { name: "CMA: Competition and Markets Authority Cases", url: "https://www.gov.uk/cma-cases" },
     ],
   },
   {
@@ -1384,8 +1357,7 @@ Customer bills continued to rise even as service deteriorated, and customers had
       "15 million customers face rising bills for deteriorating service with no alternative provider. The case has sparked a national debate about whether water privatization has failed UK consumers.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "Environment Agency: Thames Water Prosecutions", url: "https://www.gov.uk/government/organisations/environment-agency" },
-      { name: "Ofwat: Thames Water Investigation", url: "https://www.ofwat.gov.uk/" },
+      { name: "Environment Agency: Enforcement", url: "https://www.gov.uk/government/organisations/environment-agency" },
     ],
   },
   {
@@ -1460,8 +1432,7 @@ Ofgem subsequently tightened its licensing requirements and financial stress tes
       "Millions of customers were disrupted and forced onto higher tariffs. All UK energy bill-payers bore the cost of the supplier failures through higher bills. The crisis exposed fundamental failures in energy market regulation.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "Ofgem: Supplier Failures", url: "https://www.ofgem.gov.uk/information-for-household-consumers/energy-supplier-failure" },
-      { name: "NAO: Energy Supplier Failures Report", url: "https://www.nao.org.uk/reports/energy-supplier-failure/" },
+      { name: "Ofgem: Energy Supplier Failures", url: "https://www.ofgem.gov.uk/information-for-household-consumers/energy-company-went-bust" },
     ],
   },
   {
@@ -1492,9 +1463,7 @@ What made the scandal even worse was Lloyds Banking Group's response after the f
       "Dozens of small business owners lost their livelihoods, homes, and health. The case exposed how banks can abuse their position of trust over vulnerable business customers and highlighted the inadequacy of bank-run compensation schemes.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "Thames Valley Police: HBOS Convictions", url: "https://www.thamesvalley.police.uk/" },
-      { name: "FCA: Lloyds HBOS Reading Review", url: "https://www.fca.org.uk/" },
-      { name: "BBC: HBOS Fraud Explained", url: "https://www.bbc.co.uk/news/business-38841358" },
+      { name: "BBC: HBOS Reading Fraud Convictions", url: "https://www.bbc.co.uk/news/uk-england-38861816" },
     ],
   },
   {
@@ -1529,8 +1498,8 @@ The independent review led by law firm Slaughter and May found that TSB had not 
       "1.9 million customers were affected by the outage. The case demonstrated the risks of IT system migrations and led to increased FCA scrutiny of operational resilience in the banking sector.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "FCA: TSB £48.65M Fine", url: "https://www.fca.org.uk/news/press-releases/fca-fines-tsb-bank-plc-48-million" },
-      { name: "Slaughter and May: Independent Review", url: "https://www.slaughterandmay.com/" },
+      { name: "FCA: TSB Fined £48.65M for Operational Resilience Failings", url: "https://www.fca.org.uk/news/press-releases/tsb-fined-48m-operational-resilience-failings" },
+      { name: "FCA Final Notice: TSB Bank plc (2022)", url: "https://www.fca.org.uk/publication/final-notices/tsb-bank-plc-2022.pdf" },
     ],
   },
   {
@@ -1565,8 +1534,7 @@ The significant reduction from the proposed fine drew criticism from privacy adv
       "420,000 customers had their financial data compromised. The case was one of the first major GDPR enforcement actions in the UK and highlighted the importance of website security for consumer data protection.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "ICO: British Airways Fine", url: "https://ico.org.uk/action-weve-taken/enforcement/british-airways/" },
-      { name: "ICO Penalty Notice", url: "https://ico.org.uk/" },
+      { name: "ICO: Enforcement Actions", url: "https://ico.org.uk/action-weve-taken/enforcement/" },
     ],
   },
   {
@@ -1601,8 +1569,7 @@ TVS Motor Company, an Indian motorcycle manufacturer, subsequently acquired Nort
       "228 pension scheme members faced losses to their retirement savings. The case exposed gaps in pension scheme oversight for small companies and contributed to calls for stronger pension trustee regulation.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "Pensions Ombudsman: Garner Determination", url: "https://www.pensions-ombudsman.org.uk/" },
-      { name: "Insolvency Service", url: "https://www.gov.uk/government/organisations/insolvency-service" },
+      { name: "Pensions Ombudsman: Determinations", url: "https://www.pensions-ombudsman.org.uk/" },
     ],
   },
   {
@@ -1635,7 +1602,7 @@ Ofcom's investigation revealed that the problems were systemic rather than isola
       "Over 10,000 customers were directly affected by the billing failure. The case led to increased Ofcom scrutiny of telecom billing practices and complaint handling standards across the industry.",
     lastUpdated: "April 2025",
     sources: [
-      { name: "Ofcom: Vodafone £4.6M Fine", url: "https://www.ofcom.org.uk/news-centre/2016/10/vodafone-fined-for-serious-and-sustained-breaches-of-consumer-protection-rules" },
+      { name: "Ofcom: Vodafone Fined £4.6 Million (Oct 2016)", url: "https://www.ofcom.org.uk/about-ofcom/latest/media/media-releases/2016/vodafone-fined-4.6-million" },
     ],
   },
 ];
