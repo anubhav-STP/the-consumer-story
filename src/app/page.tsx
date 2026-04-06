@@ -22,10 +22,11 @@ export default function HomePage() {
               <span className="text-red-400">We tell the story.</span>
             </h1>
             <p className="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed">
-              The Consumer Story is an independent news portal documenting real
-              cases of corporate fraud, unethical business practices, and
-              consumer court orders. Every story here is based on facts, court
-              records, and regulatory filings.
+              The united voice of consumers who refuse to be silenced.
+              We document real cases of corporate fraud, broken promises,
+              and unethical business practices — backed by facts, court
+              records, and regulatory filings. Because when corporations
+              won&apos;t answer to you, they&apos;ll answer to everyone.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link

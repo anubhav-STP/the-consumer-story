@@ -54,9 +54,9 @@ export default function Footer() {
 
         <div className="border-t border-slate-700 mt-8 pt-8 text-center text-sm text-slate-500">
           <p>
-            The Consumer Story is an independent news portal. All cases
-            reported are based on publicly available court records, regulatory
-            filings, and news reports.
+            The Consumer Story is the united voice of consumers fighting back.
+            All cases reported are based on publicly available court records,
+            regulatory filings, and verified reports.
           </p>
           <p className="mt-2">
             &copy; {new Date().getFullYear()} theconsumerstory.com. All rights

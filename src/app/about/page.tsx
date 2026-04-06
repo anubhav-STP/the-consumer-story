@@ -3,7 +3,7 @@ import Link from "next/link";
 export const metadata = {
   title: "About — The Consumer Story",
   description:
-    "About The Consumer Story — an independent news portal documenting corporate fraud and empowering consumers to fight back.",
+    "About The Consumer Story — the united voice of consumers fighting back against corporate fraud and broken promises.",
 };
 
 export default function AboutPage() {
