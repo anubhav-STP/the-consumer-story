@@ -160,9 +160,6 @@ export default function SubmitPage() {
             Thank you for sharing your experience about <strong>{isOther ? otherCompany : companySearch}</strong>.
             Our editorial team will review your submission and may reach out for additional details.
           </p>
-          <p className="text-sm text-green-600 mb-6">
-            A confirmation email has been sent to <strong>{email}</strong>.
-          </p>
           <div className="flex gap-4 justify-center">
             <Link href="/" className="px-6 py-2 bg-green-700 hover:bg-green-800 text-white rounded-lg font-medium transition-colors">
               Back to Home

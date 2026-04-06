@@ -137,26 +137,6 @@ export async function POST(req: NextRequest) {
         `,
       });
 
-      // Confirmation to submitter
-      await getResend().emails.send({
-        from: "The Consumer Story <noreply@theconsumerstory.com>",
-        to: email,
-        subject: "We received your story — The Consumer Story",
-        html: `
-          <div style="font-family: Arial, sans-serif; max-width: 600px;">
-            <h2 style="color: #1e293b;">Thank you for sharing your story, ${name}.</h2>
-            <p>We have received your submission about <strong>${company}</strong> and our editorial team will review it.</p>
-            <p>What happens next:</p>
-            <ul>
-              <li>Our team will review your submission for accuracy and completeness</li>
-              <li>We may reach out to you at this email for additional details or evidence</li>
-              <li>If verified, your story will be published on theconsumerstory.com</li>
-            </ul>
-            <p>If you have additional evidence (screenshots, receipts, court documents), you can reply to this email with attachments.</p>
-            <p style="color: #64748b; margin-top: 24px;">— The Consumer Story Team<br>theconsumerstory.com</p>
-          </div>
-        `,
-      });
     } catch (emailErr) {
       // Log email failure but don't fail the submission since DB save succeeded
       console.error("Email send failed (submission still saved to DB):", emailErr);
