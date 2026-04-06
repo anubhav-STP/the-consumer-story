@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(turso db:*)",
+      "Read(//opt/homebrew/Cellar/turso/**)",
+      "Bash(turso --help)",
+      "Bash(curl -sSfL https://get.tur.so/install.sh)",
+      "Bash(bash)",
+      "Bash(~/.turso/turso db:*)",
+      "Bash(git commit -m ':*)"
+    ]
+  }
+}
