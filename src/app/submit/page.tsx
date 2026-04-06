@@ -1,8 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, useMemo, useRef, useEffect } from "react";
-import { companiesByCountry } from "@/data/companies";
+import { useState, useMemo, useRef, useEffect, useCallback } from "react";
 
 const categories = [
   "Banking / Financial Fraud",
@@ -44,6 +43,10 @@ export default function SubmitPage() {
   const [country, setCountry] = useState("");
   const [companySearch, setCompanySearch] = useState("");
   const [showDropdown, setShowDropdown] = useState(false);
+  const [isOther, setIsOther] = useState(false);
+  const [otherCompany, setOtherCompany] = useState("");
+  const [allCompanies, setAllCompanies] = useState<string[]>([]);
+  const [loadingCompanies, setLoadingCompanies] = useState(false);
   const [category, setCategory] = useState("");
   const [story, setStory] = useState("");
   const [complaint, setComplaint] = useState("");
@@ -52,13 +55,35 @@ export default function SubmitPage() {
   const [submitError, setSubmitError] = useState("");
   const dropdownRef = useRef<HTMLDivElement>(null);
 
+  // Fetch companies from DB when country changes
+  const fetchCompanies = useCallback(async (region: string) => {
+    if (region === "other") { setAllCompanies([]); return; }
+    setLoadingCompanies(true);
+    try {
+      const res = await fetch(`/api/companies?region=${region}`);
+      const data = await res.json();
+      setAllCompanies(data.companies || []);
+    } catch {
+      setAllCompanies([]);
+    } finally {
+      setLoadingCompanies(false);
+    }
+  }, []);
+
+  useEffect(() => {
+    if (country && country !== "other") {
+      fetchCompanies(country);
+    } else {
+      setAllCompanies([]);
+    }
+  }, [country, fetchCompanies]);
+
   const filteredCompanies = useMemo(() => {
-    if (!country || country === "other" || !companiesByCountry[country]) return [];
-    const list = companiesByCountry[country];
-    if (!companySearch) return list.slice(0, 20); // show first 20 when empty
+    if (!country || country === "other" || allCompanies.length === 0) return [];
+    if (!companySearch) return allCompanies.slice(0, 20);
     const q = companySearch.toLowerCase();
-    return list.filter((c) => c.toLowerCase().includes(q)).slice(0, 15);
-  }, [country, companySearch]);
+    return allCompanies.filter((c) => c.toLowerCase().includes(q)).slice(0, 15);
+  }, [country, companySearch, allCompanies]);
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
@@ -84,7 +109,8 @@ export default function SubmitPage() {
     const emailCheck = validateEmail(email);
     if (!emailCheck.valid) { setSubmitError(emailCheck.error); return; }
     if (!country) { setSubmitError("Please select a country."); return; }
-    if (!companySearch.trim()) { setSubmitError("Please enter a company name."); return; }
+    const finalCompany = isOther ? otherCompany.trim() : companySearch.trim();
+    if (!finalCompany) { setSubmitError("Please enter a company name."); return; }
     if (!category) { setSubmitError("Please select a category."); return; }
     if (!story.trim() || story.trim().length < 50) { setSubmitError("Please describe your story in at least 50 characters."); return; }
 
@@ -98,10 +124,11 @@ export default function SubmitPage() {
           name: name.trim(),
           email: email.trim(),
           country,
-          company: companySearch.trim(),
+          company: finalCompany,
           category,
           story: story.trim(),
           complaint: complaint.trim(),
+          isNewCompany: isOther || (companySearch.trim() !== "" && !allCompanies.includes(companySearch.trim())),
         }),
       });
 
@@ -130,7 +157,7 @@ export default function SubmitPage() {
           </svg>
           <h2 className="text-2xl font-bold text-green-900 mb-2">Story Submitted Successfully</h2>
           <p className="text-green-700 mb-4">
-            Thank you for sharing your experience about <strong>{companySearch}</strong>.
+            Thank you for sharing your experience about <strong>{isOther ? otherCompany : companySearch}</strong>.
             Our editorial team will review your submission and may reach out for additional details.
           </p>
           <p className="text-sm text-green-600 mb-6">
@@ -221,7 +248,7 @@ export default function SubmitPage() {
           <label className="block text-sm font-semibold text-slate-700 mb-2">
             Country <span className="text-red-500">*</span>
           </label>
-          <select value={country} onChange={(e) => { setCountry(e.target.value); setCompanySearch(""); }}
+          <select value={country} onChange={(e) => { setCountry(e.target.value); setCompanySearch(""); setIsOther(false); setOtherCompany(""); }}
             className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none bg-white">
             <option value="">Select your country</option>
             <option value="IN">India</option>
@@ -231,38 +258,54 @@ export default function SubmitPage() {
           </select>
         </div>
 
-        {/* Company — Autocomplete */}
+        {/* Company — Autocomplete with Other option */}
         <div ref={dropdownRef} className="relative">
           <label className="block text-sm font-semibold text-slate-700 mb-2">
             Company Name <span className="text-red-500">*</span>
           </label>
-          <input type="text" value={companySearch}
-            onChange={(e) => { setCompanySearch(e.target.value); setShowDropdown(true); }}
-            onFocus={() => setShowDropdown(true)}
-            className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none"
-            placeholder={country ? "Start typing company name..." : "Select a country first"}
-            disabled={!country} />
-          {showDropdown && country && country !== "other" && filteredCompanies.length > 0 && (
-            <div className="absolute z-20 top-full left-0 right-0 mt-1 bg-white border border-slate-200 rounded-lg shadow-lg max-h-60 overflow-y-auto">
-              {filteredCompanies.map((c) => (
-                <button key={c} type="button"
-                  onClick={() => { setCompanySearch(c); setShowDropdown(false); }}
-                  className="w-full text-left px-4 py-2.5 text-sm hover:bg-slate-50 border-b border-slate-100 last:border-b-0">
-                  {c}
-                </button>
-              ))}
-              {companySearch && !filteredCompanies.some((c) => c.toLowerCase() === companySearch.toLowerCase()) && (
-                <button type="button" onClick={() => setShowDropdown(false)}
-                  className="w-full text-left px-4 py-2.5 text-sm text-slate-500 bg-slate-50 hover:bg-slate-100">
-                  Use &quot;{companySearch}&quot; (not in list)
-                </button>
+          {!isOther ? (
+            <>
+              <input type="text" value={companySearch}
+                onChange={(e) => { setCompanySearch(e.target.value); setShowDropdown(true); }}
+                onFocus={() => setShowDropdown(true)}
+                className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none"
+                placeholder={!country ? "Select a country first" : loadingCompanies ? "Loading companies..." : "Start typing company name..."}
+                disabled={!country || loadingCompanies} />
+              {showDropdown && country && country !== "other" && (filteredCompanies.length > 0 || companySearch) && (
+                <div className="absolute z-20 top-full left-0 right-0 mt-1 bg-white border border-slate-200 rounded-lg shadow-lg max-h-60 overflow-y-auto">
+                  {filteredCompanies.map((c) => (
+                    <button key={c} type="button"
+                      onClick={() => { setCompanySearch(c); setShowDropdown(false); }}
+                      className="w-full text-left px-4 py-2.5 text-sm hover:bg-slate-50 border-b border-slate-100 last:border-b-0">
+                      {c}
+                    </button>
+                  ))}
+                  <button type="button"
+                    onClick={() => { setIsOther(true); setOtherCompany(companySearch); setShowDropdown(false); }}
+                    className="w-full text-left px-4 py-2.5 text-sm font-medium text-red-600 bg-slate-50 hover:bg-slate-100 border-t border-slate-200">
+                    Other — Enter company name manually
+                  </button>
+                </div>
               )}
-            </div>
-          )}
-          {country && country !== "other" && (
-            <p className="text-xs text-slate-400 mt-1">
-              {companiesByCountry[country]?.length || 0}+ companies listed. Type to search or enter any company name.
-            </p>
+              {country && country !== "other" && !loadingCompanies && (
+                <p className="text-xs text-slate-400 mt-1">
+                  {allCompanies.length}+ companies listed. Type to search or select &quot;Other&quot; at the bottom.
+                </p>
+              )}
+            </>
+          ) : (
+            <>
+              <input type="text" value={otherCompany}
+                onChange={(e) => setOtherCompany(e.target.value)}
+                className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 outline-none"
+                placeholder="Enter the full company name"
+                autoFocus />
+              <button type="button"
+                onClick={() => { setIsOther(false); setOtherCompany(""); }}
+                className="text-xs text-blue-600 hover:text-blue-800 mt-1">
+                Back to company list
+              </button>
+            </>
           )}
         </div>
 

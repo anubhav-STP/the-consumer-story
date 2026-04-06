@@ -9,7 +9,12 @@
       "Bash(~/.turso/turso db:*)",
       "Bash(git commit -m ':*)",
       "Bash(~/.turso/turso auth:*)",
-      "Bash(~/.turso/turso config:*)"
+      "Bash(~/.turso/turso config:*)",
+      "Bash(curl -s 'https://api.vercel.com/v9/projects/prj_oTGTWviNaf5pRdXxsQbrzXkUVkPk/env?teamId=team_PmbCc8JhH6zzo6LoDLnszvi6' -H 'Authorization: Bearer vca_3AEwZnkifcyKcazTPZynzAoyUouzMB7QThv9ErOzoADR1iDND70KviXQ')",
+      "Bash(python3 -c \"import sys,json; [print\\(e['key']\\) for e in json.load\\(sys.stdin\\)['envs']]\")",
+      "Bash(curl -s 'https://api.vercel.com/v9/projects/prj_TqwDMTFmd5Yboo2knsQt1qLimA1L/env?teamId=team_PmbCc8JhH6zzo6LoDLnszvi6' -H 'Authorization: Bearer vca_3AEwZnkifcyKcazTPZynzAoyUouzMB7QThv9ErOzoADR1iDND70KviXQ')",
+      "WebFetch(domain:resend.com)",
+      "Bash(npx tsx:*)"
     ]
   }
 }

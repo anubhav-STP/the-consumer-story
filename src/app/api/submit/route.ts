@@ -71,8 +71,10 @@ export async function POST(req: NextRequest) {
       dbInitialized = true;
     }
 
+    const db = getDb();
+
     // Save to Turso DB
-    await getDb().execute({
+    await db.execute({
       sql: `INSERT INTO submissions (name, email, country, company, category, story, complaint)
             VALUES (?, ?, ?, ?, ?, ?, ?)`,
       args: [
@@ -85,6 +87,18 @@ export async function POST(req: NextRequest) {
         complaint?.trim() || null,
       ],
     });
+
+    // If company is new (user-submitted), add to companies table for future dropdown
+    if (body.isNewCompany && country !== "other") {
+      try {
+        await db.execute({
+          sql: `INSERT OR IGNORE INTO companies (name, region, added_by) VALUES (?, ?, 'user')`,
+          args: [company.trim(), country],
+        });
+      } catch {
+        // Non-critical — don't fail submission
+      }
+    }
 
     const countryName =
       country === "IN" ? "India" :
