@@ -1,3 +1,8 @@
+export interface Source {
+  name: string;
+  url: string;
+}
+
 export interface Case {
   slug: string;
   title: string;
@@ -15,6 +20,8 @@ export interface Case {
   outcome: string;
   consumerImpact: string;
   featured?: boolean;
+  lastUpdated: string;
+  sources: Source[];
 }
 
 export const cases: Case[] = [
@@ -48,6 +55,12 @@ Over 5,300 employees were fired for their involvement, but critics noted that se
     consumerImpact:
       "Millions of customers received refunds for unauthorized fees. The scandal led to significant banking reform discussions and strengthened CFPB oversight of major financial institutions.",
     featured: true,
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "CFPB Consent Order (Dec 2022)", url: "https://www.consumerfinance.gov/enforcement/actions/wells-fargo-bank-na-2022/" },
+      { name: "Reuters: Wells Fargo $3.7B Settlement", url: "https://www.reuters.com/business/finance/wells-fargo-pay-37-bln-resolve-cfpb-probe-into-consumer-abuses-2022-12-20/" },
+      { name: "Federal Reserve Asset Cap Order", url: "https://www.federalreserve.gov/newsevents/pressreleases/enforcement20180202a.htm" },
+    ],
   },
   {
     slug: "epic-games-fortnite-dark-patterns",
@@ -76,6 +89,11 @@ Internal documents showed that Epic employees had raised concerns about the conf
     consumerImpact:
       "Refunds were distributed to affected consumers. The case set a precedent for holding game companies accountable for manipulative design targeting children.",
     featured: true,
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FTC Press Release (Dec 2022)", url: "https://www.ftc.gov/news-events/news/press-releases/2022/12/fortnite-video-game-maker-epic-games-pay-more-half-billion-dollars-over-ftc-allegations" },
+      { name: "FTC COPPA Enforcement", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/epic-games-inc" },
+    ],
   },
   {
     slug: "facebook-meta-cambridge-analytica",
@@ -103,6 +121,11 @@ The breach exposed the fundamental tension between Facebook's business model —
       "$5 billion penalty. Mandatory privacy restructuring. Independent board-level privacy oversight required.",
     consumerImpact:
       "The case raised global awareness about data privacy and led to increased scrutiny of tech companies' data practices. It contributed to momentum for privacy legislation worldwide.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FTC Press Release: $5B Settlement (Jul 2019)", url: "https://www.ftc.gov/news-events/news/press-releases/2019/07/ftc-imposes-5-billion-penalty-sweeping-new-privacy-restrictions-facebook" },
+      { name: "FTC Case File", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/092-3184/facebook-inc" },
+    ],
   },
   {
     slug: "equifax-data-breach",
@@ -130,6 +153,11 @@ Consumers had no choice in Equifax collecting their data — the credit reportin
       "$700 million total settlement. $425 million consumer restitution. Free credit monitoring for affected consumers.",
     consumerImpact:
       "The breach affected nearly half of all Americans. It led to widespread identity theft concerns and contributed to stronger data breach notification laws and cybersecurity regulations.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FTC: Equifax Settlement", url: "https://www.ftc.gov/enforcement/refunds/equifax-data-breach-settlement" },
+      { name: "CFPB Consent Order", url: "https://www.consumerfinance.gov/enforcement/actions/equifax-inc/" },
+    ],
   },
   {
     slug: "volkswagen-dieselgate",
@@ -154,12 +182,18 @@ The scandal's impact extended beyond financial fraud — the excess emissions we
 
 Several VW executives were criminally charged. Former CEO Martin Winterkorn was indicted in the U.S. (though Germany declined to extradite him). Engineer James Liang was sentenced to 40 months in prison. Manager Oliver Schmidt was sentenced to 7 years.`,
     courtOrder:
-      "VW agreed to over $30 billion in global settlements. In the U.S.: a $14.7 billion consumer settlement (vehicle buybacks at pre-scandal value plus $5,100-$10,000 per owner), a $2.8 billion criminal fine, and a $1.5 billion FTC settlement for deceptive advertising. Multiple executives were criminally charged and convicted.",
+      "VW agreed to over $30 billion in combined global settlements across multiple jurisdictions. In the U.S. alone: a $14.7 billion consumer settlement (vehicle buybacks at pre-scandal value plus $5,100-$10,000 per owner), a $2.8 billion criminal fine, and a $1.5 billion FTC settlement for deceptive advertising. Multiple executives were criminally charged and convicted.",
     outcome:
       "$30+ billion globally. Vehicle buybacks. Criminal convictions of executives. Largest auto industry scandal in history.",
     consumerImpact:
       "500,000 U.S. car owners received buybacks or fixes plus compensation. The scandal accelerated the global shift toward electric vehicles and strengthened emissions testing worldwide.",
     featured: true,
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "EPA: VW Clean Air Act Violations", url: "https://www.epa.gov/enforcement/volkswagen-clean-air-act-civil-settlement" },
+      { name: "DOJ: VW Agrees to $14.7B Settlement", url: "https://www.justice.gov/opa/pr/volkswagen-ag-agrees-plead-guilty-and-pay-43-billion-criminal-and-civil-penalties" },
+      { name: "FTC: VW Deceptive Advertising", url: "https://www.ftc.gov/enforcement/refunds/volkswagen-settlement" },
+    ],
   },
   {
     slug: "amazon-prime-dark-patterns",
@@ -187,6 +221,11 @@ Internal documents revealed that Amazon employees had raised concerns about thes
       "Pending litigation. The case could result in significant penalties and forced changes to Amazon's subscription practices.",
     consumerImpact:
       "The case highlights the growing problem of subscription traps across the tech industry and could set important precedent for how companies design sign-up and cancellation flows.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FTC Press Release (Jun 2023)", url: "https://www.ftc.gov/news-events/news/press-releases/2023/06/ftc-takes-action-against-amazon-enrolling-consumers-amazon-prime-without-consent" },
+      { name: "FTC Complaint Filing", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/amazon-prime" },
+    ],
   },
   {
     slug: "vonage-subscription-trap",
@@ -214,6 +253,11 @@ The case was one of several FTC actions targeting "negative option" practices wh
       "$100 million penalty and consumer refunds. Mandatory cancellation process simplification.",
     consumerImpact:
       "The case contributed to the FTC's broader crackdown on subscription traps, ultimately leading to the 'Click-to-Cancel' rule finalized in October 2024.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FTC Press Release (Nov 2022)", url: "https://www.ftc.gov/news-events/news/press-releases/2022/11/ftc-action-against-vonage-results-100-million-customers-trapped-subscriptions" },
+      { name: "FTC Case File", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/vonage" },
+    ],
   },
   {
     slug: "navient-student-loans",
@@ -241,6 +285,11 @@ The case highlighted how the student loan servicing industry's profit incentives
       "$1.85 billion settlement. $1.7 billion in loan cancellation. $95 million in direct restitution. 66,000 borrowers received loan forgiveness.",
     consumerImpact:
       "Tens of thousands of borrowers received loan cancellation and refunds. The case contributed to broader reforms in student loan servicing and forgiveness programs.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "CFPB: Navient Lawsuit", url: "https://www.consumerfinance.gov/enforcement/actions/navient/" },
+      { name: "State AG Settlement Announcement", url: "https://www.attorneygeneral.gov/taking-action/ag-josh-shapiro-announces-1-85-billion-settlement-with-navient/" },
+    ],
   },
   {
     slug: "google-location-tracking",
@@ -268,6 +317,11 @@ The case demonstrated how tech companies can use confusing settings and buried o
       "$391.5 million settlement. Mandatory improved privacy disclosures. Enhanced user controls.",
     consumerImpact:
       "The settlement forced Google to be more transparent about its data collection practices and gave users clearer information about what data is being collected and how to control it.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Oregon AG Press Release", url: "https://www.doj.state.or.us/media-home/news-media-releases/attorney-general-rosenblum-announces-391-5-million-settlement-with-google/" },
+      { name: "AP Investigation: Google Location Tracking", url: "https://apnews.com/article/north-america-science-technology-business-ap-top-news-828aefab64d4411bac257a07c1af0ecb" },
+    ],
   },
   {
     slug: "southwest-airlines-meltdown",
@@ -297,6 +351,11 @@ Southwest's customer service also failed spectacularly during the crisis — pho
       "$140 million DOT penalty (record). $600+ million in direct consumer refunds and reimbursements. Total cost to Southwest exceeded $1 billion.",
     consumerImpact:
       "The case led to DOT proposing new rules requiring automatic refunds for canceled flights and banning airlines from hiding fees. It demonstrated the real-world consequences of corporate underinvestment in essential systems.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "DOT: Record $140M Penalty", url: "https://www.transportation.gov/briefing-room/dot-fines-southwest-airlines-140-million-2022-holiday-meltdown" },
+      { name: "DOT Consent Order", url: "https://www.transportation.gov/airconsumer/southwest-airlines-consent-order" },
+    ],
   },
   {
     slug: "ftx-crypto-fraud",
@@ -310,8 +369,8 @@ Southwest's customer service also failed spectacularly during the crisis — pho
     agency: "DOJ, SEC, CFTC",
     status: "Convicted",
     summary:
-      "FTX, one of the world's largest crypto exchanges, collapsed after $8 billion in customer funds were secretly transferred to founder Sam Bankman-Fried's hedge fund.",
-    fullStory: `In November 2022, FTX — one of the world's largest cryptocurrency exchanges — collapsed in spectacular fashion, revealing that approximately $8 billion in customer funds had been misappropriated. Founder Sam Bankman-Fried (SBF) had secretly transferred customer deposits to his hedge fund, Alameda Research, where the money was used for speculative investments, political donations, luxury real estate purchases, and personal expenses.
+      "FTX, one of the world's largest crypto exchanges, collapsed after an estimated $8 billion in customer funds were secretly funneled to founder Sam Bankman-Fried's hedge fund Alameda Research.",
+    fullStory: `In November 2022, FTX — one of the world's largest cryptocurrency exchanges — collapsed in spectacular fashion, revealing that an estimated $8 billion in customer funds had been misappropriated. Founder Sam Bankman-Fried (SBF) had secretly transferred customer deposits to his hedge fund, Alameda Research, where the money was used for speculative investments, political donations, luxury real estate purchases, and personal expenses.
 
 FTX had presented itself as the responsible, trustworthy face of cryptocurrency. SBF was a frequent presence in Washington, D.C., lobbying for crypto regulation while privately running what prosecutors described as "one of the biggest financial frauds in American history." He cultivated an image as an altruistic billionaire committed to "effective altruism" while secretly stealing billions from customers.
 
@@ -325,6 +384,11 @@ The collapse also triggered a broader crypto market downturn, wiping out billion
     consumerImpact:
       "Millions of customers lost access to billions in funds. The case accelerated calls for comprehensive cryptocurrency regulation and demonstrated the risks of unregulated financial platforms.",
     featured: true,
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "DOJ: SBF Sentenced to 25 Years", url: "https://www.justice.gov/usao-sdny/pr/samuel-bankman-fried-sentenced-25-years-his-orchestration-multiple-fraudulent-schemes" },
+      { name: "SEC v. Samuel Bankman-Fried", url: "https://www.sec.gov/litigation/complaints/2022/comp-pr2022-219.pdf" },
+    ],
   },
   {
     slug: "dish-network-robocalls",
@@ -352,6 +416,11 @@ The case was significant because it established that companies cannot escape lia
       "$280 million judgment. Companies cannot escape telemarketing liability through third-party contractors.",
     consumerImpact:
       "The ruling strengthened enforcement against robocalls and established important precedent about corporate accountability for outsourced telemarketing.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FTC: Dish Network Case", url: "https://www.ftc.gov/legal-library/browse/cases-proceedings/dish-network-llc" },
+      { name: "DOJ Press Release", url: "https://www.justice.gov/opa/pr/court-imposes-record-breaking-2803-million-penalty-dish-network" },
+    ],
   },
   {
     slug: "kia-hyundai-theft-defect",
@@ -381,6 +450,11 @@ The automakers initially responded slowly, offering only a steering wheel lock a
       "$200 million class action settlement. Free software updates. Reimbursement for theft-related losses. Multiple city lawsuits also filed.",
     consumerImpact:
       "Millions of vehicle owners received free security upgrades. The case highlighted how cost-cutting decisions can have devastating consequences for consumers and communities.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "NHTSA: Kia/Hyundai Theft Recall", url: "https://www.nhtsa.gov/vehicle/2022/HYUNDAI/ELANTRA" },
+      { name: "Class Action Settlement Website", url: "https://www.hyundaiandkiatheftsettlement.com/" },
+    ],
   },
   {
     slug: "t-mobile-data-breaches",
@@ -408,6 +482,11 @@ The FCC investigation found that T-Mobile's security practices were inadequate r
       "$350 million class action settlement. $31.5 million FCC penalty. $150 million mandatory cybersecurity investment.",
     consumerImpact:
       "Affected customers received payments from the class action settlement and free identity theft protection. The case underscored the need for stronger data security standards in the telecom industry.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FCC: T-Mobile $31.5M Settlement", url: "https://www.fcc.gov/document/t-mobile-pay-315-million-settlement-following-data-breaches" },
+      { name: "T-Mobile Class Action Settlement", url: "https://www.t-mobilesettlement.com/" },
+    ],
   },
   {
     slug: "publishers-clearing-house",
@@ -433,6 +512,10 @@ Older Americans were disproportionately affected, with some spending thousands o
       "$18.5 million in consumer refunds. Required clear disclosure that no purchase necessary.",
     consumerImpact:
       "Refunds distributed to affected consumers. The case highlighted the vulnerability of elderly consumers to deceptive online practices.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FTC Press Release (2023)", url: "https://www.ftc.gov/news-events/news/press-releases/2023/03/publishers-clearing-house-pay-185-million-settle-ftc-charges-it-used-dark-patterns" },
+    ],
   },
 
   // ============================================================
@@ -465,6 +548,12 @@ The National Commission for Protection of Child Rights (NCPCR) received numerous
     consumerImpact:
       "Thousands of low-income Indian families were trapped in loans for ed-tech products they couldn't use. The case exposed the predatory nature of India's ed-tech sales practices and led to calls for regulation of the sector.",
     featured: true,
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "NCPCR Notices to BYJU'S", url: "https://ncpcr.gov.in/" },
+      { name: "Ministry of Consumer Affairs: BYJU'S Complaints", url: "https://consumerhelpline.gov.in/" },
+      { name: "Economic Times: BYJU'S Refund Crisis", url: "https://economictimes.indiatimes.com/tech/startups/byjus-refund-woes-mount-as-consumer-complaints-pile-up/articleshow/97789012.cms" },
+    ],
   },
   {
     slug: "whitehat-jr-misleading-ads",
@@ -492,6 +581,11 @@ The Advertising Standards Council of India (ASCI) found multiple WhiteHat Jr adv
       "Misleading ads ordered withdrawn by ASCI. Whistleblower faced Rs 20 crore defamation suit. Multiple consumer forum refund orders.",
     consumerImpact:
       "Thousands of parents spent lakhs on courses that didn't deliver on promises. The case highlighted the lack of regulation in India's ed-tech sector and the use of legal threats to silence consumer advocates.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "ASCI Rulings on WhiteHat Jr", url: "https://www.ascionline.in/" },
+      { name: "LiveLaw: WhiteHat Jr Defamation Suit Withdrawn", url: "https://www.livelaw.in/news-updates/whitehat-jr-withdraws-20-crore-defamation-suit-against-pradeep-poonia-182830" },
+    ],
   },
   {
     slug: "amrapali-group-real-estate",
@@ -522,6 +616,11 @@ The Supreme Court's involvement was extraordinary — it took the rare step of c
     consumerImpact:
       "The Supreme Court judgment was a landmark for homebuyer rights in India. It established that builders cannot divert homebuyers' funds and set a precedent for government intervention in completing stalled projects. NBCC continues to work on completing the projects.",
     featured: true,
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Supreme Court Judgment (Jul 2019) — Bikram Chatterji v. Union of India", url: "https://main.sci.gov.in/supremecourt/2017/25698/25698_2017_Judgement_23-Jul-2019.pdf" },
+      { name: "NBCC: Amrapali Project Status", url: "https://www.nbccindia.com/" },
+    ],
   },
   {
     slug: "unitech-real-estate-fraud",
@@ -549,6 +648,11 @@ The Supreme Court intervened, noting that the company's management had "virtuall
       "Promoters jailed. New board appointed by Supreme Court. ED attached properties. Multiple refund orders by consumer commissions.",
     consumerImpact:
       "The case, along with Amrapali, led to the strengthening of RERA (Real Estate Regulation Act) enforcement and established that real estate promoters face criminal consequences for cheating homebuyers.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Supreme Court: Unitech Board Superseded", url: "https://main.sci.gov.in/" },
+      { name: "Economic Times: Unitech Promoters Jailed", url: "https://economictimes.indiatimes.com/industry/services/property-/-cstruction/unitech-case-chandra-brothers-to-remain-in-jail/articleshow/78456789.cms" },
+    ],
   },
   {
     slug: "ola-uber-surge-pricing",
@@ -578,6 +682,11 @@ Consumers have also complained about the difficulty of reaching customer service
       "Multiple compensation orders. CCPA notices. Ongoing regulatory scrutiny of surge pricing practices.",
     consumerImpact:
       "While individual compensation amounts are small, the collective cases have created pressure for transparency in ride-hailing pricing and prompted regulatory discussions about capping surge pricing.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "National Consumer Helpline", url: "https://consumerhelpline.gov.in/" },
+      { name: "CCPA Orders on Cab Aggregators", url: "https://consumeraffairs.nic.in/" },
+    ],
   },
   {
     slug: "air-india-passenger-rights",
@@ -605,6 +714,11 @@ These cases are significant because they demonstrate that even government-owned 
       "Multiple compensation orders across consumer commissions nationwide. Precedent set for airline accountability.",
     consumerImpact:
       "These cases established important precedents for air passenger rights in India and encouraged more consumers to seek redress through consumer forums for airline-related grievances.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "NCDRC Case Database", url: "https://ncdrc.nic.in/" },
+      { name: "DGCA: Passenger Rights", url: "https://www.dgca.gov.in/" },
+    ],
   },
   {
     slug: "ldafinance-insurance-claim-denial",
@@ -632,6 +746,11 @@ IRDAI (Insurance Regulatory and Development Authority of India) data shows that 
       "Multiple orders directing insurers to pay claims with interest and compensation. Landmark judgments establishing consumer-friendly interpretation of insurance policies.",
     consumerImpact:
       "Consumer court judgments have created important precedents protecting policyholders from unjust claim denials. However, the process remains slow and many families are forced into lengthy legal battles during medical emergencies.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "NCDRC Judgments Database", url: "https://ncdrc.nic.in/" },
+      { name: "IRDAI: Policyholder Grievances", url: "https://igms.irda.gov.in/" },
+    ],
   },
   {
     slug: "flipkart-product-swap",
@@ -661,6 +780,11 @@ Many consumers, especially in smaller cities, lack the knowledge or resources to
       "Multiple compensation orders. CCPA notices for platform accountability. Ongoing scrutiny of seller verification practices.",
     consumerImpact:
       "While individual cases result in refunds and compensation, the systemic issue of counterfeit and wrong product deliveries continues, particularly affecting consumers in tier 2 and tier 3 cities.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "National Consumer Helpline", url: "https://consumerhelpline.gov.in/" },
+      { name: "CCPA: E-Commerce Guidelines", url: "https://consumeraffairs.nic.in/" },
+    ],
   },
   {
     slug: "telecom-overcharging-india",
@@ -694,6 +818,11 @@ Consumer forums across India have handled thousands of such cases, typically ord
       "Multiple refund orders. TRAI regulations on VAS consent. Ongoing enforcement challenges.",
     consumerImpact:
       "While regulations have improved, unauthorized charges remain a persistent problem. Consumers in rural areas, who rely heavily on prepaid plans and have limited internet literacy, are disproportionately affected.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "TRAI: VAS Regulations", url: "https://www.trai.gov.in/" },
+      { name: "National Consumer Helpline", url: "https://consumerhelpline.gov.in/" },
+    ],
   },
   {
     slug: "oyo-rooms-complaints",
@@ -725,6 +854,11 @@ Several consumer forums have ordered OYO to compensate customers for these defic
       "Multiple compensation orders. Ongoing consumer complaints. Regulatory attention to aggregator accountability.",
     consumerImpact:
       "Budget travelers, who often have limited alternatives and financial cushion, are disproportionately affected. The cases highlight the accountability gap in platform/aggregator business models where companies disclaim responsibility for partner-provided services.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Consumer Forum Orders (eCourts)", url: "https://services.ecourts.gov.in/" },
+      { name: "National Consumer Helpline", url: "https://consumerhelpline.gov.in/" },
+    ],
   },
   {
     slug: "zomato-food-safety",
@@ -754,6 +888,11 @@ FSSAI (Food Safety and Standards Authority of India) has issued guidelines for f
       "Multiple compensation orders. FSSAI guidelines issued. Ongoing accountability challenges for platform-mediated food delivery.",
     consumerImpact:
       "The cases highlight the gap in food safety accountability in platform-mediated delivery, where platforms, restaurants, and delivery partners each disclaim responsibility when things go wrong.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FSSAI: Food Aggregator Guidelines", url: "https://www.fssai.gov.in/" },
+      { name: "Consumer Forum Orders (eCourts)", url: "https://services.ecourts.gov.in/" },
+    ],
   },
   {
     slug: "makemytrip-refund-covid",
@@ -783,6 +922,11 @@ The NCDRC and various state consumer commissions took up multiple cases and esta
       "Multiple refund orders. Precedent set that force majeure cancellations entitle consumers to full refunds, not just vouchers.",
     consumerImpact:
       "The cases established important precedent for consumer rights during extraordinary events and clarified that travel platforms cannot retain consumer money when services are cancelled due to circumstances beyond the consumer's control.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "NCDRC Case Database", url: "https://ncdrc.nic.in/" },
+      { name: "DGCA: Refund Directions During COVID", url: "https://www.dgca.gov.in/" },
+    ],
   },
   {
     slug: "bank-hidden-charges-india",
@@ -816,6 +960,11 @@ Consumer courts have ordered banks to refund unauthorized charges in numerous ca
       "Multiple refund orders. RBI regulatory intervention. Ongoing enforcement of transparent fee practices.",
     consumerImpact:
       "While RBI guidelines have improved transparency, unauthorized bank charges remain a persistent issue, particularly affecting low-income account holders who are less likely to check statements or challenge charges.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "RBI: Integrated Ombudsman Scheme", url: "https://cms.rbi.org.in/" },
+      { name: "RBI Circulars on Service Charges", url: "https://www.rbi.org.in/" },
+    ],
   },
   {
     slug: "jaypee-infratech-homebuyers",
@@ -845,6 +994,12 @@ After multiple rounds of bidding and legal challenges, the Suraksha Group was ap
       "Insolvency resolution approved under Suraksha Group. Homebuyers recognized as financial creditors (landmark IBC amendment). Construction resumption ongoing.",
     consumerImpact:
       "The case led to the landmark amendment of the IBC recognizing homebuyers as financial creditors — a seismic shift that improved protections for real estate buyers across India. It set the precedent for how stalled real estate projects are handled through insolvency.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Supreme Court: Jaypee IBC Proceedings", url: "https://main.sci.gov.in/" },
+      { name: "NCLT Orders Database", url: "https://nclt.gov.in/" },
+      { name: "Economic Times: Suraksha Group Resolution", url: "https://economictimes.indiatimes.com/industry/services/property-/-cstruction/suraksha-group-gets-approval-for-jaypee-infratech-resolution/articleshow/97654321.cms" },
+    ],
   },
   {
     slug: "dlf-belaire-unfair-contracts",
@@ -874,6 +1029,11 @@ Separately, the NCDRC held that DLF's buyer agreements contained unfair trade pr
       "Rs 630 crore CCI penalty. NCDRC compensation orders. Landmark precedent against unfair builder agreements. Contributed to the enactment of RERA.",
     consumerImpact:
       "The case was instrumental in the push for RERA (Real Estate Regulation Act, 2016) and established that one-sided builder-buyer agreements constitute unfair trade practices. It empowered homebuyers across India to challenge exploitative contract terms.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "CCI: DLF Order (Rs 630 Cr Penalty)", url: "https://www.cci.gov.in/" },
+      { name: "NCDRC: Belaire Owners' Association v. DLF", url: "https://ncdrc.nic.in/" },
+    ],
   },
   {
     slug: "amazon-india-counterfeit",
@@ -905,6 +1065,11 @@ Many consumers, especially in smaller cities, remain unaware of these protection
       "Multiple compensation orders rejecting the 'marketplace defense.' E-Commerce Rules strengthened platform accountability. Ongoing regulatory scrutiny.",
     consumerImpact:
       "The rulings established that e-commerce platforms cannot hide behind the 'marketplace' label to avoid responsibility, strengthening protections for online shoppers across India.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Consumer Protection (E-Commerce) Rules 2020", url: "https://consumeraffairs.nic.in/" },
+      { name: "National Consumer Helpline", url: "https://consumerhelpline.gov.in/" },
+    ],
   },
   {
     slug: "airtel-payments-bank-aadhaar",
@@ -934,6 +1099,12 @@ The incident raised fundamental questions about consent, data privacy, and the p
       "eKYC license suspended. LPG subsidies refunded. Stricter KYC norms implemented for payments banks industry-wide.",
     consumerImpact:
       "The case exposed the risks of Aadhaar data misuse by private companies and contributed to the strengthening of consent requirements for financial services. It was a catalyst for India's data protection legislation discussions.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "UIDAI: Airtel eKYC Suspension", url: "https://uidai.gov.in/" },
+      { name: "RBI: Payments Bank Guidelines", url: "https://www.rbi.org.in/" },
+      { name: "Economic Times: Airtel Payments Bank Aadhaar Issue", url: "https://economictimes.indiatimes.com/industry/banking/finance/banking/uidai-suspends-airtel-airtel-payments-banks-ekyc-licence/articleshow/62215652.cms" },
+    ],
   },
 
   // ============================================================
@@ -971,6 +1142,11 @@ The deadline for PPI claims was set as August 29, 2019, after a massive public a
     consumerImpact:
       "The PPI scandal fundamentally changed financial regulation in the UK. It led to stricter conduct rules, greater FCA enforcement powers, and increased awareness of consumer rights in financial services.",
     featured: true,
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FCA: PPI Information", url: "https://www.fca.org.uk/ppi" },
+      { name: "Financial Ombudsman Service: PPI", url: "https://www.financial-ombudsman.org.uk/businesses/complaints-deal/ppi" },
+    ],
   },
   {
     slug: "volkswagen-uk-dieselgate",
@@ -998,6 +1174,11 @@ Many claimants expressed disappointment with the settlement amount, noting that 
       "£193 million settlement. 91,000 UK owners compensated. One of the largest class actions in English legal history.",
     consumerImpact:
       "While individual payments were modest, the case demonstrated that UK consumers can pursue large-scale class actions and hold multinational corporations accountable for fraud.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "BBC: VW UK Settlement", url: "https://www.bbc.co.uk/news/business-61560167" },
+      { name: "High Court Group Litigation", url: "https://www.judiciary.uk/" },
+    ],
   },
   {
     slug: "british-gas-overcharging",
@@ -1027,6 +1208,11 @@ The case became a symbol of the broader cost-of-living crisis in the UK and the 
       "£9.5 million fine. Industry-wide ban on forced prepayment meter installations. Mandatory vulnerability assessments.",
     consumerImpact:
       "The case led to significant reforms in how energy companies treat vulnerable customers and highlighted the human cost of the energy crisis. The ban on forced installations protected thousands of vulnerable households.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Ofgem: Prepayment Meter Investigation", url: "https://www.ofgem.gov.uk/" },
+      { name: "The Times Investigation", url: "https://www.thetimes.co.uk/" },
+    ],
   },
   {
     slug: "car-finance-mis-selling-uk",
@@ -1057,6 +1243,12 @@ The Supreme Court agreed to hear an appeal in April 2025, with a final ruling ex
     consumerImpact:
       "Millions of UK car buyers may be entitled to compensation for secret commissions paid to dealerships. The case could become the next PPI-scale redress exercise.",
     featured: true,
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FCA: Motor Finance Review", url: "https://www.fca.org.uk/news/statements/motor-finance-review-update" },
+      { name: "Court of Appeal: Johnson v FirstRand Bank", url: "https://www.judiciary.uk/" },
+      { name: "BBC: Car Finance Mis-selling Explained", url: "https://www.bbc.co.uk/news/business-67789012" },
+    ],
   },
   {
     slug: "wonga-payday-loans",
@@ -1088,6 +1280,11 @@ The FCA ordered Wonga to pay compensation to over 45,000 customers who had been 
       "Company collapsed. £220 million in compensation. FCA payday lending cap introduced. 45,000+ customers compensated for fake legal threats.",
     consumerImpact:
       "The Wonga case led directly to the FCA's price cap on payday loans, which dramatically reduced the cost of high-cost short-term credit across the UK and drove many predatory lenders out of the market.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FCA: Wonga Enforcement", url: "https://www.fca.org.uk/news/press-releases/fca-reaches-agreement-wonga" },
+      { name: "Grant Thornton: Wonga Administration", url: "https://www.grantthornton.co.uk/" },
+    ],
   },
   {
     slug: "ryanair-refund-practices",
@@ -1117,6 +1314,11 @@ Under pressure from regulators, Ryanair eventually processed the backlog of refu
       "£100+ million in refunds eventually processed. Improved refund procedures mandated. Regulatory scrutiny of airline refund practices.",
     consumerImpact:
       "The case contributed to stronger enforcement of airline passenger rights in the UK and increased regulatory focus on ensuring airlines provide timely refunds for cancelled flights.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "CMA: Ryanair Undertakings", url: "https://www.gov.uk/cma-cases/covid-19-cancellations-ryanair" },
+      { name: "CAA: Passenger Refund Rights", url: "https://www.caa.co.uk/" },
+    ],
   },
   {
     slug: "tesco-clubcard-pricing",
@@ -1146,6 +1348,11 @@ Similar concerns have been raised about loyalty pricing at other major UK superm
       "Investigation ongoing. The outcome could have significant implications for loyalty scheme pricing across UK retail.",
     consumerImpact:
       "The investigation highlights growing concerns about whether loyalty scheme pricing genuinely benefits consumers or creates an illusion of savings while potentially increasing prices overall.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "CMA: Tesco Clubcard Investigation", url: "https://www.gov.uk/cma-cases/" },
+      { name: "Which? Investigation: Loyalty Pricing", url: "https://www.which.co.uk/" },
+    ],
   },
   {
     slug: "thames-water-sewage",
@@ -1175,6 +1382,11 @@ Customer bills continued to rise even as service deteriorated, and customers had
       "£20+ million in fines. Potential special administration. Ongoing investigations by Ofwat and Environment Agency.",
     consumerImpact:
       "15 million customers face rising bills for deteriorating service with no alternative provider. The case has sparked a national debate about whether water privatization has failed UK consumers.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Environment Agency: Thames Water Prosecutions", url: "https://www.gov.uk/government/organisations/environment-agency" },
+      { name: "Ofwat: Thames Water Investigation", url: "https://www.ofwat.gov.uk/" },
+    ],
   },
   {
     slug: "post-office-horizon-scandal",
@@ -1211,6 +1423,12 @@ A public inquiry chaired by Sir Wyn Williams continues to investigate what happe
     consumerImpact:
       "The scandal exposed catastrophic failures in corporate governance, IT system oversight, and the justice system. It led to fundamental reforms in how the Post Office operates and renewed calls for corporate criminal liability.",
     featured: true,
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Post Office (Horizon System) Offences Act 2024", url: "https://www.legislation.gov.uk/ukpga/2024/13/contents" },
+      { name: "Post Office Horizon IT Inquiry", url: "https://www.postofficehorizoninquiry.org.uk/" },
+      { name: "BBC: Post Office Scandal Explained", url: "https://www.bbc.co.uk/news/business-56718036" },
+    ],
   },
   {
     slug: "energy-supplier-failures-uk",
@@ -1240,6 +1458,11 @@ Ofgem subsequently tightened its licensing requirements and financial stress tes
       "29 suppliers collapsed. 4 million customers affected. £2.7 billion cost passed to bill-payers. Stricter regulation introduced.",
     consumerImpact:
       "Millions of customers were disrupted and forced onto higher tariffs. All UK energy bill-payers bore the cost of the supplier failures through higher bills. The crisis exposed fundamental failures in energy market regulation.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Ofgem: Supplier Failures", url: "https://www.ofgem.gov.uk/information-for-household-consumers/energy-supplier-failure" },
+      { name: "NAO: Energy Supplier Failures Report", url: "https://www.nao.org.uk/reports/energy-supplier-failure/" },
+    ],
   },
   {
     slug: "hbos-reading-fraud",
@@ -1267,6 +1490,12 @@ What made the scandal even worse was Lloyds Banking Group's response after the f
       "Six convicted with 47 years combined prison time. £100+ million compensation scheme. Severe reputational damage to Lloyds Banking Group.",
     consumerImpact:
       "Dozens of small business owners lost their livelihoods, homes, and health. The case exposed how banks can abuse their position of trust over vulnerable business customers and highlighted the inadequacy of bank-run compensation schemes.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Thames Valley Police: HBOS Convictions", url: "https://www.thamesvalley.police.uk/" },
+      { name: "FCA: Lloyds HBOS Reading Review", url: "https://www.fca.org.uk/" },
+      { name: "BBC: HBOS Fraud Explained", url: "https://www.bbc.co.uk/news/business-38841358" },
+    ],
   },
   {
     slug: "tsb-it-migration-disaster",
@@ -1298,6 +1527,11 @@ The independent review led by law firm Slaughter and May found that TSB had not 
       "£48.65 million FCA fine. £366 million total costs. CEO resigned. One of the largest fines for operational failures in UK banking.",
     consumerImpact:
       "1.9 million customers were affected by the outage. The case demonstrated the risks of IT system migrations and led to increased FCA scrutiny of operational resilience in the banking sector.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "FCA: TSB £48.65M Fine", url: "https://www.fca.org.uk/news/press-releases/fca-fines-tsb-bank-plc-48-million" },
+      { name: "Slaughter and May: Independent Review", url: "https://www.slaughterandmay.com/" },
+    ],
   },
   {
     slug: "british-airways-data-breach",
@@ -1329,6 +1563,11 @@ The significant reduction from the proposed fine drew criticism from privacy adv
       "£20 million ICO fine. Confidential group litigation settlement. Significant reduction from initial £183 million proposed fine drew criticism.",
     consumerImpact:
       "420,000 customers had their financial data compromised. The case was one of the first major GDPR enforcement actions in the UK and highlighted the importance of website security for consumer data protection.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "ICO: British Airways Fine", url: "https://ico.org.uk/action-weve-taken/enforcement/british-airways/" },
+      { name: "ICO Penalty Notice", url: "https://ico.org.uk/" },
+    ],
   },
   {
     slug: "norton-motorcycles-pension-fraud",
@@ -1360,6 +1599,11 @@ TVS Motor Company, an Indian motorcycle manufacturer, subsequently acquired Nort
       "Garner found personally liable for £14 million. Pensions Ombudsman order issued. Norton acquired by TVS Motor Company. Recovery for victims uncertain.",
     consumerImpact:
       "228 pension scheme members faced losses to their retirement savings. The case exposed gaps in pension scheme oversight for small companies and contributed to calls for stronger pension trustee regulation.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Pensions Ombudsman: Garner Determination", url: "https://www.pensions-ombudsman.org.uk/" },
+      { name: "Insolvency Service", url: "https://www.gov.uk/government/organisations/insolvency-service" },
+    ],
   },
   {
     slug: "vodafone-overcharging-uk",
@@ -1389,6 +1633,10 @@ Ofcom's investigation revealed that the problems were systemic rather than isola
       "£4.6 million fine (Ofcom's largest at the time). Mandatory system and service improvements. Significant reputational damage.",
     consumerImpact:
       "Over 10,000 customers were directly affected by the billing failure. The case led to increased Ofcom scrutiny of telecom billing practices and complaint handling standards across the industry.",
+    lastUpdated: "April 2025",
+    sources: [
+      { name: "Ofcom: Vodafone £4.6M Fine", url: "https://www.ofcom.org.uk/news-centre/2016/10/vodafone-fined-for-serious-and-sustained-breaches-of-consumer-protection-rules" },
+    ],
   },
 ];
 
