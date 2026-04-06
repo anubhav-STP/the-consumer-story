@@ -7,7 +7,9 @@
       "Bash(curl -sSfL https://get.tur.so/install.sh)",
       "Bash(bash)",
       "Bash(~/.turso/turso db:*)",
-      "Bash(git commit -m ':*)"
+      "Bash(git commit -m ':*)",
+      "Bash(~/.turso/turso auth:*)",
+      "Bash(~/.turso/turso config:*)"
     ]
   }
 }

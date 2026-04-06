@@ -611,7 +611,7 @@ The Supreme Court's involvement was extraordinary — it took the rare step of c
     lastUpdated: "April 2025",
     sources: [
       { name: "Business Standard: SC Cancels Amrapali RERA Registration", url: "https://www.business-standard.com/article/current-affairs/sc-cancels-amrapali-group-rera-registration-for-cheating-homebuyers-119072301326_1.html" },
-      { name: "LiveLaw: SC Cancels Amrapali Registration, Directs NBCC", url: "https://www.livelaw.in/top-stories/breaking-sc-cancels-registration-of-amrapali-group-under-rera-directs-nbcc-to-complete-stalled-projects-146962" },
+      { name: "SCC Online: SC Cancels Amrapali RERA Registration", url: "https://www.scconline.com/blog/post/2019/07/23/sc-cancels-amrapali-groups-rera-registration-for-defrauding-homebuyers/" },
     ],
   },
   {
