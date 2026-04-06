@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-900 text-slate-300 mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -47,27 +47,6 @@ export default function Footer() {
                 <Link href="/about" className="hover:text-white transition-colors">
                   About Us
                 </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Consumer Helplines */}
-          <div>
-            <h3 className="font-semibold text-white mb-3">
-              Consumer Helplines
-            </h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <span className="text-white font-medium">1800-11-4000</span>
-                <span className="text-slate-400"> — National Consumer Helpline</span>
-              </li>
-              <li>
-                <span className="text-white font-medium">ReportFraud.ftc.gov</span>
-                <span className="text-slate-400"> — FTC (US)</span>
-              </li>
-              <li>
-                <span className="text-white font-medium">0808 223 1133</span>
-                <span className="text-slate-400"> — Citizens Advice (UK)</span>
               </li>
             </ul>
           </div>
